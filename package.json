@@ -1,0 +1,39 @@
+{
+  "name": "saidoun-tahmi-pfe-2020",
+  "author": "saidoun&tahmi",
+  "version": "1.0.0",
+  "description": "USTHB 2020 : Online voting application for educational purpose.This was the project of bachelor graduation memorendum",
+  "main": "index.js",
+  "scripts": {
+    "mongodb": "mongod --dbpath=./db/data --port 27017",
+    "localdb": "MONGODB=LOCAL node index.js",
+    "killmongo": "sudo pkill -f mongod",
+    "start": "MONGODB=CLOUD node index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@react-ssr/core": "^0.22.0",
+    "@react-ssr/express": "^0.22.0",
+    "assert": "^2.0.0",
+    "chalk": "^4.0.0",
+    "cors": "^2.8.5",
+    "death": "^1.1.0",
+    "emotion": "^10.0.27",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "mongodb": "^3.5.7",
+    "morgan": "^1.10.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^5.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.0.0"
+  }
+}
